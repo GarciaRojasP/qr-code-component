@@ -21,12 +21,12 @@ Esto es una solución de la [QR code component challenge on Frontend Mentor](htt
 
 ### Screenshot
 
-![]()
+![](https://github.com/GarciaRojasP/qr-code-component/assets/119550417/5152fa74-e0fc-4ad1-b232-58c734c87768)
 
 ### Links
 
-- Ver código: [QR code component]()
-- Ver demo: [QR code component]()
+- Ver código: [QR code component](https://github.com/GarciaRojasP/qr-code-component)
+- Ver demo: [QR code component](https://qr-code-component-two-delta.vercel.app/)
 
 ## Mi proceso
 
