@@ -1,0 +1,112 @@
+:root{
+
+    /*==================== COLOR ====================*/
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Outfit', sans-serif;
+
+    /*==================== FONT ====================*/
+    --font-small: 15px;
+    --font-normal: 16px;
+    --font-big: 1.3rem;
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-regular: 400; 
+    --w-bold: 700;
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.5;
+
+}
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    margin:0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    font-weight: var(--w-regular);
+    background-color: var(--light-gray);
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.main{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*==================== CARD ====================*/
+.card{
+    grid-template-columns: 1fr;
+    background-color: var(--white);
+    width: 90%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0px 0px 10px -3px var(--grayish-blue);
+    animation: fade 0.8s 0.6s both ease-in;
+    -webkit-animation: fade 0.8s 0.6s both ease-in;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.card__img{
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.card__texts{
+    padding: 0 0.5rem 1rem;
+}
+
+.card__title{
+    font-size: var(--font-big);
+    font-weight: var(--w-bold);
+    color: var(--dark-blue);
+    line-height: 1.2;
+}
+
+.card__paragraph{
+    color: var(--grayish-blue);
+    font-size: var(--font-small);
+    margin: 1rem 0;
+}
